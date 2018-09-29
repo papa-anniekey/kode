@@ -21,12 +21,10 @@ zip = zipfile.ZipFile(temp)
 zip.extractall(yesterday)
 zip.close()
 
-
 print(yesterday)
 
 file_data = open(yesterday + '/domain-names.txt', 'r')
 lines = file_data.readlines()
-#print(lines[:-1])
 
 search_data = open("./temp/search_list.txt", 'r')
 keywords = search_data.readlines()
